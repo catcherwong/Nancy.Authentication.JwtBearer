@@ -1,17 +1,16 @@
-[中文版](./README-zh.md)
+[English](./README.md)
 
 # Nancy.Authentication.JwtBearer
 
-A JwtBearer authentication provider for Nancy.It is available in NuGet (only supports .NET Core now).
+为Nancy提供JwtBearer授权验证的一个扩展。已经可以在NuGet上下载安装了，目前仅支持.NET Core.
 
+# 快速上手
 
-# Quick Start
-
-## Instatll the package first
+## 安装NuGet包
 
 `Install-Package Nancy.Authentication.JwtBearer`
 
-## Create a Bootstrapper class
+## 创建一个Bootstrapper类
 
 ```csharp
 public class Bootstrapper : Nancy.DefaultNancyBootstrapper
@@ -54,7 +53,7 @@ public class Bootstrapper : Nancy.DefaultNancyBootstrapper
 }
 ```
 
-## Add RequiresAuthentication in your modules
+## 在Module中添加授权验证
 
 ```csharp
 public class MainModule : Nancy.NancyModule
