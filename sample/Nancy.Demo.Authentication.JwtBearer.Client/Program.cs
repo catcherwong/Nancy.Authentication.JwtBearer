@@ -50,7 +50,7 @@
             Console.WriteLine("begin to request the resouce server");
 
             var rsUrl = "http://localhost:60774/";
-            _client.DefaultRequestHeaders.Add("Authorization", $"{Scheme} {token.access_token}");
+            _client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token.access_token}");
             HttpResponseMessage rsMsg = _client.GetAsync(rsUrl).Result;
 
             Console.WriteLine("result of requesting the resouce server");

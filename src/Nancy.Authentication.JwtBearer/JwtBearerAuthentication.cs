@@ -67,9 +67,9 @@
             var jwtToken = context.Request.Headers["Authorization"].FirstOrDefault() ?? string.Empty;
            
             //whether the token value start with the challenge from configuration
-            if (jwtToken.StartsWith(configuration.Challenge))
+            if (jwtToken.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
             {
-                jwtToken = jwtToken.Substring(configuration.Challenge.Length + 1);
+                jwtToken = jwtToken.Substring("Bearer ".Length);
             }
             else
             {                                
