@@ -2,7 +2,13 @@
 
 # Nancy.Authentication.JwtBearer
 
-为Nancy提供JwtBearer授权验证的一个扩展。已经可以在NuGet上下载安装了，目前仅支持.NET Core.
+![NuGet Version](https://img.shields.io/nuget/v/Nancy.Authentication.JwtBearer.svg)
+
+为Nancy提供JwtBearer授权验证的一个扩展。
+
+这个组件基于.NET Standard 2.0，并且已经可以在NuGet上下载安装了！
+
+<https://www.nuget.org/packages/Nancy.Authentication.JwtBearer/1.1.0>
 
 # 快速上手
 

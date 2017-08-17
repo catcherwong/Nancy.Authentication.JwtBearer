@@ -2,12 +2,17 @@
 
 # Nancy.Authentication.JwtBearer
 
-A JwtBearer authentication provider for Nancy.It is available in NuGet (only supports .NET Core now).
+![NuGet Version](https://img.shields.io/nuget/v/Nancy.Authentication.JwtBearer.svg)
 
+Nancy.Authentication.JwtBearer is a JwtBearer authentication provider for Nancy.
+
+It's based on .NET Standard 2.0 , and it is available in NuGet as well. 
+
+<https://www.nuget.org/packages/Nancy.Authentication.JwtBearer/1.1.0>
 
 # Quick Start
 
-## Instatll the package first
+## Instatll the package at first
 
 `Install-Package Nancy.Authentication.JwtBearer`
 
@@ -31,7 +36,7 @@ public class Bootstrapper : Nancy.DefaultNancyBootstrapper
 
             // Validate the JWT Issuer (iss) claim
             ValidateIssuer = true,
-            ValidIssuer = "http://www.c-sharpcorner.com/members/catcher-wong",
+            ValidIssuer = "https://github.com/hwqdt/",
 
             // Validate the JWT Audience (aud) claim
             ValidateAudience = true,
