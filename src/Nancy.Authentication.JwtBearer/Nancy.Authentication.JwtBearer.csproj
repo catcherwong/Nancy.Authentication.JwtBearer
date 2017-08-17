@@ -1,10 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.1</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.1.0</Version>
+    <Description>A JwtBearer authentication provider for Nancy.</Description>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://github.com/hwqdt/Nancy.Authentication.JwtBearer</PackageProjectUrl>
+    <PackageTags>Nancy,Authentication,JWT</PackageTags>
+    <RepositoryUrl>https://github.com/hwqdt/Nancy.Authentication.JwtBearer</RepositoryUrl>
+    <PackageReleaseNotes>update the library to .NET Standard 2.0</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

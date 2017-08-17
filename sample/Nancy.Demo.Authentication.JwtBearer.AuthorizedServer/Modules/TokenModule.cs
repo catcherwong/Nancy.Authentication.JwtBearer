@@ -78,7 +78,7 @@
             {
                 Code = "999",
                 Message = "OK",
-                Data = GetJwt(parameters.client_id,appConfig)
+                Data = GetJwt(parameters.client_id, appConfig)
             };
         }
 

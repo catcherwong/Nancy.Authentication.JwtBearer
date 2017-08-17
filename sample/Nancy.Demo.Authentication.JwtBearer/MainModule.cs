@@ -9,7 +9,7 @@
         {
             this.RequiresAuthentication();
 
-            Get("/", _ => 
+            Get("/", _ =>
             {
                 StringBuilder sb = new StringBuilder(1024);
 

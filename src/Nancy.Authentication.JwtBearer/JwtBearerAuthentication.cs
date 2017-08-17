@@ -49,33 +49,33 @@
 
             module.RequiresAuthentication();
             module.Before.AddItemToStartOfPipeline(GetLoadAuthenticationHook(configuration));
-            module.After.AddItemToEndOfPipeline(GetAuthenticationPromptHook(configuration));            
+            module.After.AddItemToEndOfPipeline(GetAuthenticationPromptHook(configuration));
         }
 
         private static Func<NancyContext, Response> GetLoadAuthenticationHook(JwtBearerAuthenticationConfiguration configuration)
         {
-            return context => 
+            return context =>
             {
-                Validate(context,configuration);
+                Validate(context, configuration);
                 return null;
             };
         }
 
         private static void Validate(NancyContext context, JwtBearerAuthenticationConfiguration configuration)
-        {            
+        {
             //get the token from request header
             var jwtToken = context.Request.Headers["Authorization"].FirstOrDefault() ?? string.Empty;
-           
+
             //whether the token value start with the challenge from configuration
             if (jwtToken.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
             {
                 jwtToken = jwtToken.Substring("Bearer ".Length);
             }
             else
-            {                                
+            {
                 return;
             }
-            
+
             //verify the token
             if (!string.IsNullOrWhiteSpace(jwtToken))
             {
@@ -88,8 +88,8 @@
                     context.CurrentUser = validatedClaims;
                 }
                 catch (Exception)
-                {                                  
-                }                                                                       
+                {
+                }
             }
         }
 

@@ -1,23 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{99C5C7B8-AC0A-408C-8C5D-32B8541D2721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Authentication.JwtBearer", "src\Nancy.Authentication.JwtBearer\Nancy.Authentication.JwtBearer.csproj", "{5C24F042-5081-44CA-A302-56A2EB823A9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Authentication.JwtBearer", "src\Nancy.Authentication.JwtBearer\Nancy.Authentication.JwtBearer.csproj", "{28146862-2C60-4142-AD1E-655C2794FE5A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4770666C-6703-4F3A-A1D9-628571C2903B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F47AE98E-7D65-4A3C-A348-1D038FF5B72D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{1EB7DE97-25C0-4FB0-BCE7-25476FE3444F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Demo.Authentication.JwtBearer", "sample\Nancy.Demo.Authentication.JwtBearer\Nancy.Demo.Authentication.JwtBearer.csproj", "{FB121ED0-6AFA-4D36-B205-351E10DB7D5A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Demo.Authentication.JwtBearer", "sample\Nancy.Demo.Authentication.JwtBearer\Nancy.Demo.Authentication.JwtBearer.csproj", "{5F5D03FD-3702-48CF-8A90-99282CB6E481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Demo.Authentication.JwtBearer.AuthorizedServer", "sample\Nancy.Demo.Authentication.JwtBearer.AuthorizedServer\Nancy.Demo.Authentication.JwtBearer.AuthorizedServer.csproj", "{5668EC82-F842-46EC-AB04-032B7DB807FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Authentication.JwtBearer.Test", "test\Nancy.Authentication.JwtBearer.Test\Nancy.Authentication.JwtBearer.Test.csproj", "{D7E18BB9-C8E2-4D8B-A8F1-126C7B21FDFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Authentication.JwtBearer.Client", "sample\Nancy.Demo.Authentication.JwtBearer.Client\Nancy.Demo.Authentication.JwtBearer.Client.csproj", "{46098D6E-6556-485D-BD58-B51B83E0C1EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Authentication.JwtBearer.AuthorizedServer", "sample\Nancy.Demo.Authentication.JwtBearer.AuthorizedServer\Nancy.Demo.Authentication.JwtBearer.AuthorizedServer.csproj", "{B965D03E-C162-46D8-9725-EA1A8E03FEA8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B8271B61-1C8A-4CEE-9D03-A39BDD62C7DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Authentication.JwtBearer.Client", "sample\Nancy.Demo.Authentication.JwtBearer.Client\Nancy.Demo.Authentication.JwtBearer.Client.csproj", "{952A6EF0-67D5-414E-843A-467DE74C927C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Authentication.JwtBearer.Test", "test\Nancy.Authentication.JwtBearer.Test\Nancy.Authentication.JwtBearer.Test.csproj", "{86BE25FF-0217-4951-9396-BA1D229EA95B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,35 +25,38 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{28146862-2C60-4142-AD1E-655C2794FE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28146862-2C60-4142-AD1E-655C2794FE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28146862-2C60-4142-AD1E-655C2794FE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28146862-2C60-4142-AD1E-655C2794FE5A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F5D03FD-3702-48CF-8A90-99282CB6E481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F5D03FD-3702-48CF-8A90-99282CB6E481}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F5D03FD-3702-48CF-8A90-99282CB6E481}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F5D03FD-3702-48CF-8A90-99282CB6E481}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7E18BB9-C8E2-4D8B-A8F1-126C7B21FDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7E18BB9-C8E2-4D8B-A8F1-126C7B21FDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7E18BB9-C8E2-4D8B-A8F1-126C7B21FDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7E18BB9-C8E2-4D8B-A8F1-126C7B21FDFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B965D03E-C162-46D8-9725-EA1A8E03FEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B965D03E-C162-46D8-9725-EA1A8E03FEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B965D03E-C162-46D8-9725-EA1A8E03FEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B965D03E-C162-46D8-9725-EA1A8E03FEA8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{952A6EF0-67D5-414E-843A-467DE74C927C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{952A6EF0-67D5-414E-843A-467DE74C927C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{952A6EF0-67D5-414E-843A-467DE74C927C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{952A6EF0-67D5-414E-843A-467DE74C927C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C24F042-5081-44CA-A302-56A2EB823A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C24F042-5081-44CA-A302-56A2EB823A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C24F042-5081-44CA-A302-56A2EB823A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C24F042-5081-44CA-A302-56A2EB823A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB121ED0-6AFA-4D36-B205-351E10DB7D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB121ED0-6AFA-4D36-B205-351E10DB7D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB121ED0-6AFA-4D36-B205-351E10DB7D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB121ED0-6AFA-4D36-B205-351E10DB7D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5668EC82-F842-46EC-AB04-032B7DB807FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5668EC82-F842-46EC-AB04-032B7DB807FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5668EC82-F842-46EC-AB04-032B7DB807FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5668EC82-F842-46EC-AB04-032B7DB807FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46098D6E-6556-485D-BD58-B51B83E0C1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46098D6E-6556-485D-BD58-B51B83E0C1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46098D6E-6556-485D-BD58-B51B83E0C1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46098D6E-6556-485D-BD58-B51B83E0C1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{28146862-2C60-4142-AD1E-655C2794FE5A} = {99C5C7B8-AC0A-408C-8C5D-32B8541D2721}
-		{5F5D03FD-3702-48CF-8A90-99282CB6E481} = {1EB7DE97-25C0-4FB0-BCE7-25476FE3444F}
-		{D7E18BB9-C8E2-4D8B-A8F1-126C7B21FDFC} = {F47AE98E-7D65-4A3C-A348-1D038FF5B72D}
-		{B965D03E-C162-46D8-9725-EA1A8E03FEA8} = {1EB7DE97-25C0-4FB0-BCE7-25476FE3444F}
-		{952A6EF0-67D5-414E-843A-467DE74C927C} = {1EB7DE97-25C0-4FB0-BCE7-25476FE3444F}
+		{5C24F042-5081-44CA-A302-56A2EB823A9E} = {4770666C-6703-4F3A-A1D9-628571C2903B}
+		{FB121ED0-6AFA-4D36-B205-351E10DB7D5A} = {7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}
+		{5668EC82-F842-46EC-AB04-032B7DB807FE} = {7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}
+		{46098D6E-6556-485D-BD58-B51B83E0C1EA} = {7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}
+		{86BE25FF-0217-4951-9396-BA1D229EA95B} = {B8271B61-1C8A-4CEE-9D03-A39BDD62C7DB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {572285DA-C92D-4452-91C4-F5DDDA66B7B3}
 	EndGlobalSection
 EndGlobal
