@@ -4,6 +4,8 @@
 
 ![NuGet Version](https://img.shields.io/nuget/v/Nancy.Authentication.JwtBearer.svg)
 
+[![AppVeyor](https://img.shields.io/appveyor/ci/hwqdt/nancy-authentication-jwtbearer/master.svg)](https://ci.appveyor.com/project/hwqdt/nancy-authentication-jwtbearer)
+
 Nancy.Authentication.JwtBearer is a JwtBearer authentication provider for Nancy.
 
 It's based on .NET Standard 2.0 , and it is available in NuGet as well. 
