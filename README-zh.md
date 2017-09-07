@@ -4,6 +4,8 @@
 
 ![NuGet Version](https://img.shields.io/nuget/v/Nancy.Authentication.JwtBearer.svg)
 
+[![AppVeyor](https://img.shields.io/appveyor/ci/hwqdt/nancy-authentication-jwtbearer/master.svg)](https://ci.appveyor.com/project/hwqdt/nancy-authentication-jwtbearer)
+
 为Nancy提供JwtBearer授权验证的一个扩展。
 
 这个组件基于.NET Standard 2.0，并且已经可以在NuGet上下载安装了！
