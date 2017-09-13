@@ -3,10 +3,9 @@
 branches:
   only:
     - master
-    - release
-    - dev
-    - /^(.*\/)?ci-.*$/
-    - /^rel\/.*/
+nuget restore
+cache:
+  - packages -> **\packages.config
 build_script:
   - ps: .\build.ps1
 clone_depth: 1
