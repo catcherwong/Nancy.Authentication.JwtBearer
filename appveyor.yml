@@ -3,7 +3,8 @@
 branches:
   only:
     - master
-nuget restore
+nuget: 
+  project_feed : true
 cache:
   - packages -> **\packages.config
 build_script:
