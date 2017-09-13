@@ -1,19 +1,23 @@
-﻿init:
-  - git config --global core.autocrlf true
+﻿os: Visual Studio 2017
+install:
+   - set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+configuration: Release  
 branches:
   only:
     - master
-nuget: 
-  project_feed : true
-cache:
-  - packages -> **\packages.config
-build_script:
-  - ps: .\build.ps1
 clone_depth: 1
 environment:
   global:
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+before_build:
+  - nuget restore Nancy.Authentication.Jwt.sln
+cache:
+  - packages -> **\packages.config
+build_script:
+  - ps: .\build.ps1
+
 test: off
 deploy: off
-os: Visual Studio 2017
+
