@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Demo.Authentication.J
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Demo.Authentication.JwtBearer.AuthorizedServer", "sample\Nancy.Demo.Authentication.JwtBearer.AuthorizedServer\Nancy.Demo.Authentication.JwtBearer.AuthorizedServer.csproj", "{5668EC82-F842-46EC-AB04-032B7DB807FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Demo.Authentication.JwtBearer.Client", "sample\Nancy.Demo.Authentication.JwtBearer.Client\Nancy.Demo.Authentication.JwtBearer.Client.csproj", "{46098D6E-6556-485D-BD58-B51B83E0C1EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Demo.Authentication.JwtBearer.Client", "sample\Nancy.Demo.Authentication.JwtBearer.Client\Nancy.Demo.Authentication.JwtBearer.Client.csproj", "{46098D6E-6556-485D-BD58-B51B83E0C1EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B8271B61-1C8A-4CEE-9D03-A39BDD62C7DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Authentication.JwtBearer.Test", "test\Nancy.Authentication.JwtBearer.Test\Nancy.Authentication.JwtBearer.Test.csproj", "{86BE25FF-0217-4951-9396-BA1D229EA95B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.Authentication.JwtBearer.Test", "test\Nancy.Authentication.JwtBearer.Test\Nancy.Authentication.JwtBearer.Test.csproj", "{86BE25FF-0217-4951-9396-BA1D229EA95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.NotACoreDemo.Authentication.JwtBearer", "sample\Nancy.NotACoreDemo.Authentication.JwtBearer\Nancy.NotACoreDemo.Authentication.JwtBearer.csproj", "{1B94BC91-F733-4521-9563-B78B71ECE6FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86BE25FF-0217-4951-9396-BA1D229EA95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B94BC91-F733-4521-9563-B78B71ECE6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B94BC91-F733-4521-9563-B78B71ECE6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B94BC91-F733-4521-9563-B78B71ECE6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B94BC91-F733-4521-9563-B78B71ECE6FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{5668EC82-F842-46EC-AB04-032B7DB807FE} = {7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}
 		{46098D6E-6556-485D-BD58-B51B83E0C1EA} = {7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}
 		{86BE25FF-0217-4951-9396-BA1D229EA95B} = {B8271B61-1C8A-4CEE-9D03-A39BDD62C7DB}
+		{1B94BC91-F733-4521-9563-B78B71ECE6FA} = {7E0EDDEB-494E-4EB2-BBBC-E85E0521FFCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {572285DA-C92D-4452-91C4-F5DDDA66B7B3}
