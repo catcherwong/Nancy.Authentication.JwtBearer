@@ -4,21 +4,25 @@
 
 ![NuGet Version](https://img.shields.io/nuget/v/Nancy.Authentication.JwtBearer.svg)
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/hwqdt/nancy-authentication-jwtbearer/master.svg)](https://ci.appveyor.com/project/hwqdt/nancy-authentication-jwtbearer)
+[![Build status](https://ci.appveyor.com/api/projects/status/6jeqlrrjh8f5enjy?svg=true)](https://ci.appveyor.com/project/catcherwong/nancy-authentication-jwtbearer)
 
 Nancy.Authentication.JwtBearer is a JwtBearer authentication provider for Nancy.
 
-It's based on .NET Standard 2.0 , and it is available in NuGet as well. 
+The newest version in NuGet support .NET Standard 2.0 and .NET Framework 4.5.2.
 
-<https://www.nuget.org/packages/Nancy.Authentication.JwtBearer/1.1.0>
+Visit this package in nuget :
+
+<https://www.nuget.org/packages/Nancy.Authentication.JwtBearer>
 
 # Quick Start
 
 ## Instatll the package at first
 
-`Install-Package Nancy.Authentication.JwtBearer`
+```
+Install-Package Nancy.Authentication.JwtBearer
+```
 
-## Create a Bootstrapper class
+## Configure JwtBearer In Bootstrapper Class
 
 ```csharp
 public class Bootstrapper : Nancy.DefaultNancyBootstrapper
