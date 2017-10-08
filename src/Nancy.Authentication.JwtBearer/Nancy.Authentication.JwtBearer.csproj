@@ -5,10 +5,10 @@
     <Version>1.1.1</Version>
     <Description>A JwtBearer authentication provider for Nancy.</Description>
     <Copyright>Catcher Wong</Copyright>
-    <PackageProjectUrl>https://github.com/hwqdt/Nancy.Authentication.JwtBearer</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/catcherwong/Nancy.Authentication.JwtBearer</PackageProjectUrl>
     <PackageTags>Nancy,Authentication,JWT</PackageTags>
-    <RepositoryUrl>https://github.com/hwqdt/Nancy.Authentication.JwtBearer</RepositoryUrl>
-    <PackageReleaseNotes>update the library to .NET Standard 2.0</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/catcherwong/Nancy.Authentication.JwtBearer</RepositoryUrl>
+    <PackageReleaseNotes>add support for .NET Framework 4.5.2</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
